@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Space Dodger — Gioco semplice</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Space Dodger</h1>
+    <p class="subtitle">Muovi la navicella (← → o tocco/mouse). Evita gli asteroidi e supera il tuo record!</p>
+
+    <div class="hud">
+      <div>Score: <span id="score">0</span></div>
+      <div id="best">Best: 0</div>
+    </div>
+
+    <div class="game-area">
+      <canvas id="game" width="480" height="640"></canvas>
+      <div class="overlay" id="overlay">
+        <button id="startButton">Inizia / Riavvia</button>
+        <p id="message">Premi Inizia per giocare</p>
+      </div>
+    </div>
+
+    <footer>
+      <small>Creato da Copilot per andreascapro — semplice gioco in HTML/CSS/JS</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
