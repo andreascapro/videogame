@@ -1,0 +1,26 @@
+:root{
+  --bg1: #020024;
+  --bg2: #090979;
+  --accent: #00ffd5;
+  --danger: #ff4e50;
+  --muted: #bfcbd6;
+  --glass: rgba(255,255,255,0.06);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,var(--bg1),var(--bg2));color:#e6f7ff}
+.container{max-width:600px;margin:28px auto;padding:18px;text-align:center}
+h1{margin:8px 0;font-size:2rem;letter-spacing:1px}
+.subtitle{color:var(--muted);margin:0 0 12px 0}
+.hud{display:flex;justify-content:space-between;align-items:center;color:var(--accent);font-weight:600;margin-bottom:8px}
+.game-area{position:relative;display:inline-block}
+canvas{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.25));border-radius:10px;border:1px solid rgba(255,255,255,0.06);display:block}
+.overlay{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:transparent;pointer-events:none}
+.overlay button{pointer-events:auto;padding:10px 18px;border-radius:8px;border:none;background:var(--accent);color:#052022;font-weight:700;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,0.4)}
+.overlay p{color:var(--muted);margin:0}
+footer{margin-top:14px;color:var(--muted);font-size:0.85rem}
+
+/* responsive canvas */
+@media (max-width:520px){
+  canvas{width:320px;height:426px}
+}
